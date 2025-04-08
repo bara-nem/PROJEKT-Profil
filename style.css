@@ -16,4 +16,50 @@ html { box-sizing: border-box; }
 
 body {
 	background-color: #bdc3c7;
+	margin: 0;
+}
+
+h1, a{
+	font-family: "Montserrat", sans-serif;
+	color: whitesmoke;
+	margin-top: 80px;
+}
+
+p{
+	font-family: "Source Sans 3", sans-serif;
+	color: whitesmoke;
+}
+
+.profil{
+	width: 300px;
+	background-color: #31363b;
+	padding: 150px 20px 20px 20px;
+	position: relative;
+	margin: 30px;
+	
+
+	/*
+	background-image: url(images/foto.jpg);
+	background-repeat: no-repeat;
+	background-position: left top;
+	background-size: cover;
+	*/
+}
+
+.foto{
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	padding: 0;
+	width: 300px;
+}
+
+.logo{
+	background-color: #b92e81;
+	position: absolute;
+	top: 27%;
+	right: 13%;
+	border-radius: 50%;
+	
 }
