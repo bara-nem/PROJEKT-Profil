@@ -24,19 +24,22 @@ h1, a{
 	font-optical-sizing: auto;
 	color: #bdc3c7;
 	margin-top: 80px;
+	padding: 0 20px;
 }
 
 p{
 	font-family: "Source Sans 3", sans-serif;
 	color: #bdc3c7;
+	padding: 0 20px;
 }
 
 .profil{
 	width: 300px;
 	background-color: #31363b;
-	padding: 150px 20px 20px 20px;
+	padding: 150px 0 0 0;
 	position: relative;
 	margin: 30px;
+	box-shadow: 5px 5px 10px gray;
 }
 
 .foto{
@@ -54,6 +57,7 @@ p{
 	top: 27%;
 	right: 13%;
 	border-radius: 50%;
+	box-shadow: 5px 5px 10px rgb(54, 54, 54);
 }
 
 
@@ -75,35 +79,46 @@ a{
 
 ul.odkazy {
 	list-style: none;   
-	padding: 0;         
-	margin: 0;         
 	width: 300px;   
   }
 
-  ul.odkazy li {
+ 
+
+  li.portfolio{
+	display: block;
+	padding: 10px 0;
+	border-top: 1px solid #3f464d;
+	border-bottom: 1px solid #3f464d;
 	text-align: center; 
   }
 
-  ul.odkazy li.portfolio {
-	display: block;  
-	width: 100%;    
+  li.facebook{
+	display: inline-block;
+	padding: 10px 0;
+	border-right: 1px solid #3f464d;
+	width: 49%;
+	text-align: center; 
   }
 
-  ul.odkazy li:not(.portfolio) {
-	display: inline-block; 
-	width: 50%;        
-	box-sizing: border-box; 
+  li.twitter{
+	display: inline-block;
+	padding: 10px 0;
+	width: 49%;
+	text-align: center; 
+  }
+
+  li.facebook a{
+	display: inline-block;
+  }
+
+  li.twitter a{
+	display: inline-block;
   }
   
-  /* Styl pro odkazy */
-  ul.odkazy li a {
-	display: block;
-	padding: 10px;
-	text-decoration: none;
-	background-color: #31363b;
-	border: 1px solid #3f464d;
-  }
-  
-  ul.odkazy li a:hover {
+  ul.odkazy li.facebook a:hover{
 	background-color: #3b5998;
+  }
+
+  ul.odkazy li.twitter a:hover {
+	background-color: #1da1f2;
   }
