@@ -21,13 +21,14 @@ body {
 
 h1, a{
 	font-family: "Montserrat", sans-serif;
-	color: whitesmoke;
+	font-optical-sizing: auto;
+	color: #bdc3c7;
 	margin-top: 80px;
 }
 
 p{
 	font-family: "Source Sans 3", sans-serif;
-	color: whitesmoke;
+	color: #bdc3c7;
 }
 
 .profil{
@@ -36,14 +37,6 @@ p{
 	padding: 150px 20px 20px 20px;
 	position: relative;
 	margin: 30px;
-	
-
-	/*
-	background-image: url(images/foto.jpg);
-	background-repeat: no-repeat;
-	background-position: left top;
-	background-size: cover;
-	*/
 }
 
 .foto{
@@ -61,5 +54,56 @@ p{
 	top: 27%;
 	right: 13%;
 	border-radius: 50%;
-	
 }
+
+
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+a{
+    color: #bdc3c7;
+    text-transform: uppercase;
+    text-decoration: none;
+	font-weight: 500;
+	margin: 0;
+}
+
+
+
+ul.odkazy {
+	list-style: none;   
+	padding: 0;         
+	margin: 0;         
+	width: 300px;   
+  }
+
+  ul.odkazy li {
+	text-align: center; 
+  }
+
+  ul.odkazy li.portfolio {
+	display: block;  
+	width: 100%;    
+  }
+
+  ul.odkazy li:not(.portfolio) {
+	display: inline-block; 
+	width: 50%;        
+	box-sizing: border-box; 
+  }
+  
+  /* Styl pro odkazy */
+  ul.odkazy li a {
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	background-color: #31363b;
+	border: 1px solid #3f464d;
+  }
+  
+  ul.odkazy li a:hover {
+	background-color: #3b5998;
+  }
